@@ -159,10 +159,10 @@ const Gallery = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-extrabold text-foreground mb-4">
+          <h2 className="typography-heading text-foreground mb-4">
             Company Gallery
           </h2>
-          <p className="text-base font-normal leading-relaxed text-foreground/70 max-w-2xl mx-auto">
+          <p className="typography-body text-foreground/70 max-w-2xl mx-auto">
             Explore our portfolio and documentation showcasing our achievements across all subsidiary companies.
           </p>
         </motion.div>
@@ -178,7 +178,7 @@ const Gallery = () => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+              className={`typography-button px-6 py-3 rounded-full transition-all duration-300 ${
                 activeCategory === category
                   ? 'bg-brand text-brand-foreground shadow-lg transform scale-105'
                   : 'bg-muted text-foreground hover:bg-muted/80 hover:shadow-md'
@@ -235,10 +235,10 @@ const Gallery = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span className="inline-block bg-brand px-3 py-1 rounded-full text-sm font-medium mb-2">
+                    <span className="typography-caption inline-block bg-brand px-3 py-1 rounded-full mb-2">
                       {item.category}
                     </span>
-                    <h3 className="font-semibold text-lg">{item.title}</h3>
+                    <h3 className="typography-subheading">{item.title}</h3>
                   </div>
                 </div>
               </motion.div>
@@ -281,15 +281,15 @@ const Gallery = () => {
               
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="bg-brand text-brand-foreground px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="typography-caption bg-brand text-brand-foreground px-3 py-1 rounded-full">
                     {selectedImage.category}
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">
+                <h3 className="typography-subheading text-foreground mb-2">
                   {selectedImage.title}
                 </h3>
                 {selectedImage.description && (
-                  <p className="text-foreground/70 leading-relaxed">
+                  <p className="typography-body text-foreground/70">
                     {selectedImage.description}
                   </p>
                 )}

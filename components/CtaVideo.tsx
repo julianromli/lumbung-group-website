@@ -44,7 +44,7 @@ const CtaVideo = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl font-extrabold mb-6"
+            className="typography-heading mb-6"
           >
             Driving Progress Through Synergy
           </motion.h2>
@@ -53,7 +53,7 @@ const CtaVideo = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-base font-normal leading-relaxed text-white/90 max-w-3xl mx-auto mb-12"
+            className="typography-body text-white/90 max-w-3xl mx-auto mb-12"
           >
             We believe in the power of collaboration and innovation. Our integrated approach across logistics, energy, technology, and travel creates synergies that drive sustainable growth and deliver exceptional value to our partners and communities.
           </motion.p>
@@ -73,8 +73,8 @@ const CtaVideo = () => {
             </button>
             
             <div className="text-center sm:text-left">
-              <div className="text-lg font-semibold mb-1">Watch Our Story</div>
-              <div className="text-sm text-white/80">Discover how we&apos;re shaping the future together</div>
+              <div className="typography-subheading mb-1">Watch Our Story</div>
+              <div className="typography-caption text-white/80">Discover how we&apos;re shaping the future together</div>
             </div>
           </motion.div>
 
@@ -85,16 +85,16 @@ const CtaVideo = () => {
             className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
           >
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">5</div>
-              <div className="text-white/80">Subsidiary Companies</div>
+              <div className="typography-subheading mb-2">5</div>
+              <div className="typography-caption text-white/80">Subsidiary Companies</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">15+</div>
-              <div className="text-white/80">Years of Excellence</div>
+              <div className="typography-subheading mb-2">15+</div>
+              <div className="typography-caption text-white/80">Years of Excellence</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">1000+</div>
-              <div className="text-white/80">Satisfied Clients</div>
+              <div className="typography-subheading mb-2">1000+</div>
+              <div className="typography-caption text-white/80">Satisfied Clients</div>
             </div>
           </motion.div>
         </div>
@@ -117,8 +117,8 @@ const CtaVideo = () => {
             <div className="w-full h-full flex items-center justify-center bg-gray-900">
               <div className="text-center text-white">
                 <PlayIcon className="w-16 h-16 mx-auto mb-4 opacity-50" />
-                <p className="text-lg">Company Video</p>
-                <p className="text-sm opacity-75 mt-2">Video content would be embedded here</p>
+                <p className="typography-subheading">Company Video</p>
+                <p className="typography-caption opacity-75 mt-2">Video content would be embedded here</p>
               </div>
             </div>
           </Dialog.Panel>

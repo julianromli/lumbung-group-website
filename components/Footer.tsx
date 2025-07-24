@@ -68,10 +68,10 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <Link href="/" className="text-2xl font-bold text-white mb-4 block">
+              <Link href="/" className="typography-subheading text-white mb-4 block">
                 Lumbung Group
               </Link>
-              <p className="text-white/80 mb-6 max-w-md leading-relaxed">
+              <p className="typography-body text-white/80 mb-6 max-w-md">
                 We are a leading Indonesian conglomerate dedicated to driving progress across logistics, energy, technology, and travel services through innovative solutions and strategic partnerships.
               </p>
               <div className="flex space-x-4">
@@ -97,13 +97,13 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <h3 className="typography-button mb-4">Quick Links</h3>
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-white/80 hover:text-white transition-colors duration-200"
+                      className="typography-body text-white/80 hover:text-white transition-colors duration-200"
                     >
                       {link.label}
                     </Link>
@@ -121,30 +121,30 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+              <h3 className="typography-button mb-4">Contact Info</h3>
               <div className="space-y-3">
                 <div>
-                  <p className="text-white/80 text-sm mb-1">Address</p>
-                  <p className="text-white/60 text-sm leading-relaxed">
+                  <p className="typography-caption text-white/80 mb-1">Address</p>
+                  <p className="typography-caption text-white/60">
                     Jl. Sudirman No. 123<br />
                     Jakarta Pusat 10220<br />
                     Indonesia
                   </p>
                 </div>
                 <div>
-                  <p className="text-white/80 text-sm mb-1">Phone</p>
+                  <p className="typography-caption text-white/80 mb-1">Phone</p>
                   <a
                     href="tel:+62211234567"
-                    className="text-white/60 hover:text-white transition-colors duration-200 text-sm"
+                    className="typography-caption text-white/60 hover:text-white transition-colors duration-200"
                   >
                     +62 21 1234 567
                   </a>
                 </div>
                 <div>
-                  <p className="text-white/80 text-sm mb-1">Email</p>
+                  <p className="typography-caption text-white/80 mb-1">Email</p>
                   <a
                     href="mailto:info@lumbunggroup.co.id"
-                    className="text-white/60 hover:text-white transition-colors duration-200 text-sm"
+                    className="typography-caption text-white/60 hover:text-white transition-colors duration-200"
                   >
                     info@lumbunggroup.co.id
                   </a>
@@ -163,13 +163,13 @@ const Footer = () => {
           className="border-t border-gray-700/50 mt-12 pt-8 backdrop-blur-sm"
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-300 text-sm text-center md:text-left">
+            <p className="typography-caption text-gray-300 text-center md:text-left">
               © {currentYear} Lumbung Group. All rights reserved.
             </p>
-            <div className="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-sm">
+            <div className="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2">
               <Link
                 href="/privacy"
-                className="text-white/70 hover:text-white transition-colors duration-200"
+                className="typography-caption text-white/70 hover:text-white transition-colors duration-200"
               >
                 Privacy Policy
               </Link>

@@ -22,7 +22,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-5xl md:text-5xl lg:text-5xl font-extrabold text-gray-900"
+                className="typography-heading text-gray-900"
               >
                 About{' '}
                 <span className="bg-gradient-to-r from-brand to-blue-400 bg-clip-text text-transparent">
@@ -44,7 +44,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
-              className="text-lg leading-relaxed text-gray-700"
+              className="typography-body text-gray-700"
             >
               Lumbung Group is a leading Indonesian conglomerate with a focus on various strategic business sectors. Committed to providing the best sustainable solutions, the group continues to innovate and evolve to meet the needs of a dynamic market.
             </motion.p>
@@ -54,7 +54,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
               viewport={{ once: true }}
-              className="text-lg leading-relaxed text-gray-700"
+              className="typography-body text-gray-700"
             >
               The group consists of four subsidiaries that operate in key sectors: logistics, energy, information technology, and travel services.
             </motion.p>
@@ -68,11 +68,11 @@ const About = () => {
             >
               <div className="text-center p-4 bg-white rounded-lg shadow-sm border border-gray-200">
                 <div className="text-3xl font-bold text-brand mb-2">4</div>
-                <div className="text-sm text-gray-600 font-medium">Subsidiaries</div>
+                <div className="typography-caption text-gray-600 font-medium">Subsidiaries</div>
               </div>
               <div className="text-center p-4 bg-white rounded-lg shadow-sm border border-gray-200">
                 <div className="text-3xl font-bold text-brand mb-2">25+</div>
-                <div className="text-sm text-gray-600 font-medium">Years Experience</div>
+                <div className="typography-caption text-gray-600 font-medium">Years Experience</div>
               </div>
             </motion.div>
 
@@ -81,7 +81,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.2 }}
               viewport={{ once: true }}
-              className="bg-brand hover:bg-brand/90 text-brand-foreground px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="typography-button bg-brand hover:bg-brand/90 text-brand-foreground px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               Learn More About Us
             </motion.button>
@@ -122,8 +122,8 @@ const About = () => {
                   </svg>
                 </div>
                 <div className="min-w-0">
-                  <div className="text-xs md:text-sm font-semibold text-gray-900 truncate">Innovation Driven</div>
-                  <div className="text-[10px] md:text-xs text-gray-600 truncate">Sustainable Solutions</div>
+                  <div className="typography-caption font-semibold text-gray-900 truncate">Innovation Driven</div>
+                  <div className="text-[10px] text-gray-600 truncate">Sustainable Solutions</div>
                 </div>
               </div>
             </motion.div>
@@ -143,8 +143,8 @@ const About = () => {
                   </svg>
                 </div>
                 <div className="min-w-0">
-                  <div className="text-xs md:text-sm font-semibold text-gray-900 truncate">Trusted Partner</div>
-                  <div className="text-[10px] md:text-xs text-gray-600 truncate">Reliable Service</div>
+                  <div className="typography-caption font-semibold text-gray-900 truncate">Trusted Partner</div>
+                  <div className="text-[10px] text-gray-600 truncate">Reliable Service</div>
                 </div>
               </div>
             </motion.div>
@@ -164,8 +164,8 @@ const About = () => {
                   </svg>
                 </div>
                 <div className="min-w-0">
-                  <div className="text-xs md:text-sm font-semibold text-gray-900 truncate">Expert Team</div>
-                  <div className="text-[10px] md:text-xs text-gray-600 truncate">Professional Excellence</div>
+                  <div className="typography-caption font-semibold text-gray-900 truncate">Expert Team</div>
+                  <div className="text-[10px] text-gray-600 truncate">Professional Excellence</div>
                 </div>
               </div>
             </motion.div>

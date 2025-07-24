@@ -73,10 +73,10 @@ const Subsidiaries = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-extrabold text-foreground mb-4">
+          <h2 className="typography-heading text-foreground mb-4">
             Our Subsidiary Companies
           </h2>
-          <p className="text-base font-normal leading-relaxed text-foreground/70 max-w-2xl mx-auto">
+          <p className="typography-body text-foreground/70 max-w-2xl mx-auto">
             Five specialized companies working in synergy to deliver comprehensive solutions across multiple industries.
           </p>
         </motion.div>
@@ -132,20 +132,20 @@ const Subsidiaries = () => {
               >
                 <div>
                   <div className="flex items-center mb-6">
-                    <h3 className="text-3xl font-bold text-foreground mb-2">
+                    <h3 className="typography-subheading text-foreground mb-2">
                       {activeSubsidiary.fullName}
                     </h3>
                   </div>
-                  <p className="text-base font-normal leading-relaxed text-foreground/70 mb-6">
+                  <p className="typography-body text-foreground/70 mb-6">
                     {activeSubsidiary.description}
                   </p>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-3">Key Services:</h4>
+                    <h4 className="typography-button text-foreground mb-3">Key Services:</h4>
                     <div className="grid grid-cols-2 gap-2">
                       {activeSubsidiary.services.map((service, index) => (
                         <div
                           key={index}
-                          className="flex items-center text-sm text-foreground/70"
+                          className="flex items-center typography-caption text-foreground/70"
                         >
                           <div className="w-2 h-2 bg-brand rounded-full mr-2"></div>
                           {service}

@@ -66,10 +66,10 @@ const Partners = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-extrabold text-foreground mb-4">
+          <h2 className="typography-heading text-foreground mb-4">
             Trusted by Industry Leaders
           </h2>
-          <p className="text-base font-normal leading-relaxed text-foreground/70 max-w-2xl mx-auto">
+          <p className="typography-body text-foreground/70 max-w-2xl mx-auto">
             We are proud to partner with leading organizations across various industries, building lasting relationships based on trust and mutual success.
           </p>
         </motion.div>
@@ -108,17 +108,17 @@ const Partners = () => {
           className="text-center mt-16"
         >
           <div className="bg-background rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold text-foreground mb-4">
+            <h3 className="typography-subheading text-foreground mb-4">
               Ready to Partner with Us?
             </h3>
-            <p className="text-base font-normal leading-relaxed text-foreground/70 mb-6">
+            <p className="typography-body text-foreground/70 mb-6">
               Join our network of successful partners and discover how we can create synergies that drive mutual growth and success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-brand text-brand-foreground px-8 py-3 rounded-lg hover:bg-brand/90 transition-colors duration-200 font-medium">
+              <button className="typography-button bg-brand text-brand-foreground px-8 py-3 rounded-lg hover:bg-brand/90 transition-colors duration-200">
                 Become a Partner
               </button>
-              <button className="border-2 border-brand text-brand px-8 py-3 rounded-lg hover:bg-brand hover:text-brand-foreground transition-colors duration-200 font-medium">
+              <button className="typography-button border-2 border-brand text-brand px-8 py-3 rounded-lg hover:bg-brand hover:text-brand-foreground transition-colors duration-200">
                 Learn More
               </button>
             </div>

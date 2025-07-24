@@ -22,7 +22,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+        <div className="typography-heading-sm md:typography-heading-hero lg:typography-heading-hero text-white mb-6">
           <TextAnimate animation="slideUp" by="word" className="text-white">
             Building Indonesia&apos;s
           </TextAnimate>
@@ -37,7 +37,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-lg md:text-xl font-normal leading-relaxed text-white/90 mb-8 max-w-2xl mx-auto"
+          className="typography-body text-white/90 mb-8 max-w-2xl mx-auto"
         >
           A leading Indonesian conglomerate powering progress across logistics, energy, technology, and travel services.
         </motion.p>
@@ -48,12 +48,12 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <button className="bg-brand hover:bg-brand/90 text-brand-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg">
+          <button className="typography-button bg-brand hover:bg-brand/90 text-brand-foreground px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg">
             Learn More
           </button>
-          <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 backdrop-blur-sm bg-white/20">
+          {/* <button className="typography-button border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 backdrop-blur-sm bg-white/20">
             Our Services
-          </button>
+          </button> */}
         </motion.div>
       </div>
 

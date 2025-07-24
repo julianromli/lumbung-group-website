@@ -70,10 +70,10 @@ const Products = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-extrabold text-foreground mb-4">
+          <h2 className="typography-heading text-foreground mb-4">
             Our Innovative Products
           </h2>
-          <p className="text-base font-normal leading-relaxed text-foreground/70 max-w-2xl mx-auto">
+          <p className="typography-body text-foreground/70 max-w-2xl mx-auto">
             Discover our comprehensive range of products and services designed to drive innovation and efficiency across industries.
           </p>
         </motion.div>
@@ -96,21 +96,21 @@ const Products = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute top-4 right-4">
-                  <span className="bg-brand text-brand-foreground px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+                  <span className="typography-caption bg-brand text-brand-foreground px-3 py-1 rounded-full font-medium shadow-lg">
                     {product.category}
                   </span>
                 </div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors duration-300">
+                <h3 className="typography-subheading text-gray-900 mb-3 group-hover:text-brand transition-colors duration-300">
                   {product.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="typography-body text-gray-600">
                   {product.description}
                 </p>
                 <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button className="text-brand font-semibold hover:text-brand/80 transition-colors duration-200">
+                  <button className="typography-button text-brand hover:text-brand/80 transition-colors duration-200">
                     Learn More →
                   </button>
                 </div>
@@ -125,7 +125,7 @@ const Products = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-12"
         >
-          <button className="bg-brand text-brand-foreground px-8 py-3 rounded-lg hover:bg-brand/90 transition-colors duration-200 font-medium">
+          <button className="typography-button bg-brand text-brand-foreground px-8 py-3 rounded-lg hover:bg-brand/90 transition-colors duration-200">
             View All Products
           </button>
         </motion.div>

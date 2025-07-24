@@ -44,7 +44,7 @@ const Header = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                className="typography-button text-foreground hover:text-primary transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -53,7 +53,7 @@ const Header = () => {
 
           {/* Contact Button */}
           <div className="hidden md:block">
-            <button className="bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105">
+            <button className="typography-button bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
               Contact Us
             </button>
           </div>
@@ -82,13 +82,13 @@ const Header = () => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block text-gray-700 hover:text-primary transition-colors duration-200 font-medium py-2 px-3 rounded-lg hover:bg-gray-50"
+                  className="typography-button block text-gray-700 hover:text-primary transition-colors duration-200 py-2 px-3 rounded-lg hover:bg-gray-50"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
-              <button className="w-full bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 font-medium shadow-lg">
+              <button className="typography-button w-full bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 shadow-lg">
                 Contact Us
               </button>
             </div>
