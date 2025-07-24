@@ -74,7 +74,7 @@ const CtaVideo = () => {
             
             <div className="text-center sm:text-left">
               <div className="text-lg font-semibold mb-1">Watch Our Story</div>
-              <div className="text-sm text-white/80">Discover how we're shaping the future together</div>
+              <div className="text-sm text-white/80">Discover how we&apos;re shaping the future together</div>
             </div>
           </motion.div>
 

@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
           <TextAnimate animation="slideUp" by="word" className="text-white">
-            Building Indonesia's
+            Building Indonesia&apos;s
           </TextAnimate>
           <span className="block">
             <TextAnimate animation="slideUp" delay={0.3} by="word" className="text-white">
