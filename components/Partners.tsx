@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image'
+import { Button } from '@/components/ui/button'
 
 interface Partner {
   id: string
@@ -115,12 +116,12 @@ const Partners = () => {
               Join our network of successful partners and discover how we can create synergies that drive mutual growth and success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="typography-button bg-brand text-brand-foreground px-8 py-3 rounded-lg hover:bg-brand/90 transition-colors duration-200">
+              <Button className="typography-button bg-brand text-brand-foreground px-8 py-3 rounded-lg hover:bg-brand/90 transition-colors duration-200">
                 Become a Partner
-              </button>
-              <button className="typography-button border-2 border-brand text-brand px-8 py-3 rounded-lg hover:bg-brand hover:text-brand-foreground transition-colors duration-200">
+              </Button>
+              <Button variant="outline" className="typography-button border-2 border-brand text-brand px-8 py-3 rounded-lg hover:bg-brand hover:text-brand-foreground transition-colors duration-200">
                 Learn More
-              </button>
+              </Button>
             </div>
           </div>
         </motion.div>

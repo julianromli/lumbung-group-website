@@ -4,6 +4,7 @@ import { useState, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 interface GalleryItem {
   id: string
@@ -175,9 +176,10 @@ const Gallery = () => {
           className="flex flex-wrap justify-center gap-4 mb-12"
         >
           {categories.map((category) => (
-            <button
+            <Button
               key={category}
               onClick={() => setActiveCategory(category)}
+              variant={activeCategory === category ? "default" : "secondary"}
               className={`typography-button px-6 py-3 rounded-full transition-all duration-300 ${
                 activeCategory === category
                   ? 'bg-brand text-brand-foreground shadow-lg transform scale-105'
@@ -185,7 +187,7 @@ const Gallery = () => {
               }`}
             >
               {category}
-            </button>
+            </Button>
           ))}
         </motion.div>
 
@@ -197,18 +199,20 @@ const Gallery = () => {
           className="relative"
         >
           {/* Scroll Buttons */}
-          <button
+          <Button
             onClick={() => scroll('left')}
+            size="icon"
             className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-brand text-brand-foreground p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
           >
             <ChevronLeft className="w-6 h-6" />
-          </button>
-          <button
+          </Button>
+          <Button
             onClick={() => scroll('right')}
+            size="icon"
             className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-brand text-brand-foreground p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
           >
             <ChevronRight className="w-6 h-6" />
-          </button>
+          </Button>
 
           {/* Scrollable Gallery */}
           <div
@@ -262,12 +266,14 @@ const Gallery = () => {
               className="relative bg-background rounded-2xl overflow-hidden max-w-4xl max-h-[90vh] w-full"
               onClick={(e) => e.stopPropagation()}
             >
-              <button
+              <Button
                 onClick={() => setSelectedImage(null)}
+                size="icon"
+                variant="ghost"
                 className="absolute top-4 right-4 z-10 bg-background/80 backdrop-blur-sm text-foreground p-2 rounded-full hover:bg-background transition-colors duration-200"
               >
                 <X className="w-6 h-6" />
-              </button>
+              </Button>
               
               <div className="relative h-96 md:h-[500px]">
                 <Image

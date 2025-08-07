@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image'
+import { Button } from '@/components/ui/button'
 
 interface Product {
   id: string
@@ -110,9 +111,9 @@ const Products = () => {
                   {product.description}
                 </p>
                 <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button className="typography-button text-brand hover:text-brand/80 transition-colors duration-200">
+                  <Button variant="link" className="typography-button text-brand hover:text-brand/80 transition-colors duration-200 p-0">
                     Learn More →
-                  </button>
+                  </Button>
                 </div>
               </div>
             </motion.div>
@@ -125,9 +126,9 @@ const Products = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-12"
         >
-          <button className="typography-button bg-brand text-brand-foreground px-8 py-3 rounded-lg hover:bg-brand/90 transition-colors duration-200">
+          <Button className="typography-button bg-brand text-brand-foreground px-8 py-3 rounded-lg hover:bg-brand/90 transition-colors duration-200">
             View All Products
-          </button>
+          </Button>
         </motion.div>
       </div>
     </section>

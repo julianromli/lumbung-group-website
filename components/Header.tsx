@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Button } from '@/components/ui/button'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -53,14 +54,16 @@ const Header = () => {
 
           {/* Contact Button */}
           <div className="hidden md:block">
-            <button className="typography-button bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+            <Button className="typography-button bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
               Contact Us
-            </button>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button
+            <Button
+              variant="ghost"
+              size="icon"
               onClick={toggleMenu}
               className="text-foreground hover:text-primary transition-colors duration-200"
               aria-label="Toggle menu"
@@ -70,7 +73,7 @@ const Header = () => {
               ) : (
                 <Bars3Icon className="h-6 w-6" />
               )}
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -88,9 +91,9 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
-              <button className="typography-button w-full bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 shadow-lg">
+              <Button className="typography-button w-full bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 shadow-lg">
                 Contact Us
-              </button>
+              </Button>
             </div>
           </div>
         )}

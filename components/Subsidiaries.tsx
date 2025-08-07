@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image'
+import { Button } from '@/components/ui/button'
 
 interface Subsidiary {
   id: string
@@ -90,9 +91,10 @@ const Subsidiaries = () => {
           {/* Tab Navigation */}
           <div className="flex flex-wrap border-b border-muted">
             {subsidiaries.map((subsidiary) => (
-              <button
+              <Button
                 key={subsidiary.id}
                 onClick={() => setActiveTab(subsidiary.id)}
+                variant={activeTab === subsidiary.id ? "default" : "ghost"}
                 className={`flex-1 min-w-0 px-4 py-4 transition-all duration-300 relative overflow-hidden rounded-lg ${
                   activeTab === subsidiary.id
                     ? 'bg-brand shadow-lg transform scale-105'
@@ -116,7 +118,7 @@ const Subsidiaries = () => {
                   />
                   </div>
                 </div>
-              </button>
+              </Button>
             ))}
           </div>
 

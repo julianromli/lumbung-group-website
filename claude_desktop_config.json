@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "git-mcp-server": {
+      "command": "npx",
+      "args": [
+        "@cyanheads/git-mcp-server"
+      ],
+      "env": {
+        "GIT_WORKING_DIR": "D:\\Projects\\Lumbung Group WEBSITE\\website_scratch",
+        "DEBUG": "*"
+      }
+    }
+  }
+}

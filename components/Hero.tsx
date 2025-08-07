@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { TextAnimate } from '@/components/magicui/text-animate'
+import { Button } from '@/components/ui/button'
 
 const Hero = () => {
   return (
@@ -48,9 +49,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <button className="typography-button bg-brand hover:bg-brand/90 text-brand-foreground px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg">
+          <Button className="typography-button bg-brand hover:bg-brand/90 text-brand-foreground px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg">
             Learn More
-          </button>
+          </Button>
           {/* <button className="typography-button border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 backdrop-blur-sm bg-white/20">
             Our Services
           </button> */}

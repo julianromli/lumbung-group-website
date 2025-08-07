@@ -6,6 +6,7 @@ import { useRef } from 'react'
 import { Dialog } from '@headlessui/react'
 import { PlayIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import { Button } from '@/components/ui/button'
 
 const CtaVideo = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
@@ -64,13 +65,15 @@ const CtaVideo = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
-            <button
+            <Button
               onClick={openVideo}
+              size="icon"
+              variant="ghost"
               className="group flex items-center justify-center w-20 h-20 bg-white/20 hover:bg-white/30 rounded-full transition-all duration-300 hover:scale-110"
               aria-label="Play company video"
             >
               <PlayIcon className="w-8 h-8 text-white ml-1 group-hover:scale-110 transition-transform duration-300" />
-            </button>
+            </Button>
             
             <div className="text-center sm:text-left">
               <div className="typography-subheading mb-1">Watch Our Story</div>
@@ -106,13 +109,15 @@ const CtaVideo = () => {
         
         <div className="fixed inset-0 flex items-center justify-center p-4">
           <Dialog.Panel className="relative bg-black rounded-lg overflow-hidden max-w-4xl w-full aspect-video">
-            <button
+            <Button
               onClick={closeVideo}
+              size="icon"
+              variant="ghost"
               className="absolute top-4 right-4 z-10 bg-black/50 hover:bg-black/70 rounded-full p-2 transition-colors duration-200"
               aria-label="Close video"
             >
               <XMarkIcon className="w-6 h-6 text-white" />
-            </button>
+            </Button>
             
             <div className="w-full h-full flex items-center justify-center bg-gray-900">
               <div className="text-center text-white">
