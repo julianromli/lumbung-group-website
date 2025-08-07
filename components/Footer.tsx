@@ -126,27 +126,27 @@ const Footer = () => {
                 <div>
                   <p className="typography-caption text-white/80 mb-1">Address</p>
                   <p className="typography-caption text-white/60">
-                    Jl. Sudirman No. 123<br />
-                    Jakarta Pusat 10220<br />
-                    Indonesia
+                    Ruko Pariwarna Niaga No. 7<br />
+                    Kota Baru Parahyangan<br />
+                    Kab. Bandung Barat
                   </p>
                 </div>
                 <div>
                   <p className="typography-caption text-white/80 mb-1">Phone</p>
                   <a
-                    href="tel:+62211234567"
+                    href="tel:+62822888236"
                     className="typography-caption text-white/60 hover:text-white transition-colors duration-200"
                   >
-                    +62 21 1234 567
+                    +62 822-888-236
                   </a>
                 </div>
                 <div>
                   <p className="typography-caption text-white/80 mb-1">Email</p>
                   <a
-                    href="mailto:info@lumbunggroup.co.id"
+                    href="mailto:support@lumbunggroup.co.id"
                     className="typography-caption text-white/60 hover:text-white transition-colors duration-200"
                   >
-                    info@lumbunggroup.co.id
+                    support@lumbunggroup.co.id
                   </a>
                 </div>
               </div>
@@ -175,13 +175,13 @@ const Footer = () => {
               </Link>
               <Link
                 href="/terms"
-                className="text-white/70 hover:text-white transition-colors duration-200"
+                className="typography-caption text-white/70 hover:text-white transition-colors duration-200"
               >
                 Terms of Service
               </Link>
               <Link
                 href="/sitemap"
-                className="text-white/70 hover:text-white transition-colors duration-200"
+                className="typography-caption text-white/70 hover:text-white transition-colors duration-200"
               >
                 Sitemap
               </Link>

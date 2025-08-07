@@ -160,7 +160,7 @@ const Gallery = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="typography-heading text-foreground mb-4">
+          <h2 className="text-4xl md:typography-heading text-foreground mb-4 font-bold">
             Company Gallery
           </h2>
           <p className="typography-body text-foreground/70 max-w-2xl mx-auto">

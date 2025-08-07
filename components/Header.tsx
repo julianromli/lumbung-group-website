@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
+    { href: '/', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#services', label: 'Services' },
     { href: '#products', label: 'Products' },
@@ -54,8 +54,10 @@ const Header = () => {
 
           {/* Contact Button */}
           <div className="hidden md:block">
-            <Button className="typography-button bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
-              Contact Us
+            <Button asChild className="typography-button bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+              <Link href="/contact">
+                Contact Us
+              </Link>
             </Button>
           </div>
 
@@ -91,8 +93,10 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
-              <Button className="typography-button w-full bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 shadow-lg">
-                Contact Us
+              <Button asChild className="typography-button w-full bg-brand text-brand-foreground px-6 py-2 rounded-lg hover:bg-brand/90 transition-all duration-300 shadow-lg">
+                <Link href="/contact">
+                  Contact Us
+                </Link>
               </Button>
             </div>
           </div>

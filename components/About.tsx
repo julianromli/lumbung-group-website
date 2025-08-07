@@ -22,10 +22,10 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="typography-heading text-gray-900"
+                className="text-4xl sm:typography-heading md:typography-heading font-bold bg-gradient-to-r from-brand to-blue-400 bg-clip-text text-transparent"
               >
                 About{' '}
-                <span className="bg-gradient-to-r from-brand to-blue-400 bg-clip-text text-transparent">
+                <span className="text-4xl sm:typography-heading md:typography-heading font-bold md:text-inherit bg-gradient-to-r from-brand to-blue-400 bg-clip-text text-transparent">
                   Lumbung Group
                 </span>
               </motion.h2>

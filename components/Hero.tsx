@@ -23,7 +23,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="typography-heading-sm md:typography-heading-hero lg:typography-heading-hero text-white mb-6">
+        <div className="text-4xl font-bold md:typography-heading-hero lg:typography-heading-hero text-white mb-6">
           <TextAnimate animation="slideUp" by="word" className="text-white">
             Building Indonesia&apos;s
           </TextAnimate>
@@ -49,7 +49,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <Button className="typography-button bg-brand hover:bg-brand/90 text-brand-foreground px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg">
+          <Button className="typography-button bg-brand hover:bg-brand/90 text-brand-foreground px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg" onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>
             Learn More
           </Button>
           {/* <button className="typography-button border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 backdrop-blur-sm bg-white/20">

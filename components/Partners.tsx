@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Marquee } from '@/components/magicui/marquee'
 
@@ -48,7 +49,7 @@ const Partners = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="typography-heading text-foreground mb-4">
+          <h2 className="text-4xl md:typography-heading text-foreground mb-4 font-bold">
             Trusted by Industry Leaders
           </h2>
           <p className="typography-body text-foreground/70 max-w-2xl mx-auto">
@@ -87,7 +88,7 @@ const Partners = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <div className="bg-background rounded-2xl p-8 max-w-4xl mx-auto">
+          <div className="bg-background shadow-lg rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="typography-subheading text-foreground mb-4">
               Ready to Partner with Us?
             </h3>
@@ -95,11 +96,10 @@ const Partners = () => {
               Join our network of successful partners and discover how we can create synergies that drive mutual growth and success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="typography-button bg-brand text-brand-foreground px-8 py-3 rounded-lg hover:bg-brand/90 transition-colors duration-200">
-                Become a Partner
-              </Button>
-              <Button variant="outline" className="typography-button border-2 border-brand text-brand px-8 py-3 rounded-lg hover:bg-brand hover:text-brand-foreground transition-colors duration-200">
-                Learn More
+              <Button asChild className="typography-button bg-brand text-brand-foreground px-8 py-3 rounded-lg hover:bg-brand/90 transition-colors duration-200">
+                <Link href="/contact">
+                  Become a Partner
+                </Link>
               </Button>
             </div>
           </div>

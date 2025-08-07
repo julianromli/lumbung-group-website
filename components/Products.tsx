@@ -63,7 +63,7 @@ const Products = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="products" className="py-20 bg-background" ref={ref}>
+    <section id="products" className="py-20 bg-gray-50" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -71,7 +71,7 @@ const Products = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="typography-heading text-foreground mb-4">
+          <h2 className="text-4xl font-bold md:typography-heading text-foreground mb-4">
             Our Innovative Products
           </h2>
           <p className="typography-body text-foreground/70 max-w-2xl mx-auto">
