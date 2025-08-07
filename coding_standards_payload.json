@@ -1,0 +1,10 @@
+{
+  "content": "CODING STANDARDS - Lumbung Group Website\n\nThis document contains comprehensive coding standards for the Lumbung Group website project covering development philosophy, naming conventions, React/Next.js best practices, styling guidelines, state management, error handling, accessibility, and performance optimization.\n\nKey Standards:\n- Use PascalCase for components and types\n- Use kebab-case for directories and files\n- Use camelCase for variables and functions\n- Use UPPERCASE for constants\n- Functional components with TypeScript\n- Tailwind CSS for styling\n- useState for local state, useReducer for complex state\n- Proper error boundaries and validation\n- Accessibility compliance (ARIA, semantic HTML)\n- Performance optimization with React.memo, useMemo, useCallback\n- Code splitting and lazy loading\n- Follow SOLID principles\n- Component-driven development\n- Type safety with TypeScript\n- Responsive design with mobile-first approach\n- Consistent spacing and color system\n- Form validation with Zod\n- API error handling\n- Keyboard navigation support\n- Color contrast compliance\n\nThis standard should be followed consistently across all development work on the Lumbung Group website to ensure code quality, maintainability, and accessibility.",
+  "metadata": {
+    "type": "coding_standards",
+    "project": "lumbung_group_website",
+    "created_at": "2025-01-16",
+    "version": "1.0",
+    "tags": ["coding_standards", "react", "nextjs", "typescript", "tailwind", "accessibility", "performance"]
+  }
+}

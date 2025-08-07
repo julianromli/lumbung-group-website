@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "supermemory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "supergateway",
+        "--sse",
+        "https://mcp.supermemory.ai/f-lo6k7JoYe2BcVV0W0s4/sse"
+      ]
+    }
+  }
+}

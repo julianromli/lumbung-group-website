@@ -4,6 +4,7 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
+import { Marquee } from '@/components/magicui/marquee'
 
 interface Partner {
   id: string
@@ -14,43 +15,23 @@ interface Partner {
 const partners: Partner[] = [
   {
     id: '1',
-    name: 'Microsoft',
-    logo: 'https://images.unsplash.com/photo-1633419461186-7d40a38105ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
+    name: 'Google',
+    logo: 'https://logo.svgcdn.com/l/google.svg'
   },
   {
     id: '2',
-    name: 'Google',
-    logo: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
+    name: 'Microsoft',
+    logo: 'https://logo.svgcdn.com/l/microsoft-windows.svg'
   },
   {
     id: '3',
-    name: 'Amazon',
-    logo: 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
+    name: 'Intel',
+    logo: 'https://logo.svgcdn.com/l/intel.svg'
   },
   {
     id: '4',
-    name: 'Tesla',
-    logo: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
-  },
-  {
-    id: '5',
-    name: 'Apple',
-    logo: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
-  },
-  {
-    id: '6',
-    name: 'Samsung',
-    logo: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
-  },
-  {
-    id: '7',
-    name: 'IBM',
-    logo: 'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
-  },
-  {
-    id: '8',
-    name: 'Oracle',
-    logo: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80'
+    name: 'NVIDIA',
+    logo: 'https://logo.svgcdn.com/l/nvidia.svg'
   }
 ]
 
@@ -79,27 +60,25 @@ const Partners = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 items-center"
         >
-          {partners.map((partner, index) => (
-            <motion.div
-              key={partner.id}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex items-center justify-center p-6 bg-background rounded-lg hover:shadow-md transition-shadow duration-300 group"
-            >
-              <div className="relative w-32 h-16 grayscale group-hover:grayscale-0 transition-all duration-300">
-                <Image
-                  src={partner.logo}
-                  alt={partner.name}
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
+          <Marquee pauseOnHover={true} className="[--duration:20s]">
+            {partners.map((partner) => (
+              <div
+                key={partner.id}
+                className="flex items-center justify-center p-6 transition-shadow duration-300 group mx-4"
+              >
+                <div className="relative w-32 h-16 grayscale group-hover:grayscale-0 transition-all duration-300">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
               </div>
-            </motion.div>
-          ))}
+            ))}
+          </Marquee>
         </motion.div>
 
         <motion.div
